@@ -1,0 +1,21 @@
+using System;
+namespace DataTypes
+{
+	public class Program
+	{
+		public static void Main()
+		{
+			int pieces;
+			double total;
+
+			Console.Write("Enter the price of Apple: ");
+			pieces = Convert.ToInt32(Console.ReadLine());
+			Console.Write("Enter the total prices of " + pieces + " apple(s): ");
+			total = Convert.ToDouble(Console.ReadLine());
+
+			Console.WriteLine("The total prices of " + pieces + " apple(s) is " + total);
+			Console.WriteLine("The value of original price is " + total);
+			Console.WriteLine("The value of converted price is " + Math.Floor(total));
+		}
+	}
+}
